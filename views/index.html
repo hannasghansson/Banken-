@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- Header -->
+  <header>
+    <h1>Banken</h1>
+    <p>Inlämnning 2</p>
+  </header>
+
+   <!-- Logga ut -->
+  
+  <form id="logout">
+    <button>Logout</button>
+  </form>
+
+  <!-- logga in  -->
+  <form id="login">
+    <h2>Login</h2>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username">
+  
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+     <button>Login</button>
+  </form>
+
+  <!-- Välomestext-->
+  <p id="welcome"></p>
+
+
+  <!-- Registera ny användare -->
+  <form id="register">
+    <h2>Register</h2>
+    <label for="username">Username</label>
+    <input type="text" id="registerUser" name="username">
+  
+    <label for="password">Password</label>
+    <input type="password" id="registerPass" name="password">
+    <button>Register new account</button>
+  </form>
+  
+  <button id="secretbtn">Read secret data...</button>
+  <p id="secretoutput"></p>
+ 
+
+
+  <!-- Skapa bank konto -->
+  <form id="createAccount">
+    <h2>Create new account</h2>
+
+    <label for="name">name</label>
+    <input type="text" id="name" name="name">
+    <br>
+
+    <label for="amount">amount</label>
+    <input type="number" id="amount" name="amount">
+    <br>
+
+    <button>Save</button>
+  </form>
+
+  <!-- Lista på alla konton/medlemar   -->
+  <article id="AllAccountsList">
+    <h2> All Accounts</h2>
+    <ul id="accounts">
+      
+    </ul>
+  </article>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
